@@ -12,7 +12,7 @@ import Foundation
 
  - Parameters:
     - id: String: A unique identifier for the meal.
-    - meal: String: The name of the meal.
+    - name: String: The name of the meal.
     - category: String?: The category of the meal, if any.
     - area: String?: The area or origin of the meal, if any.
     - instructions: String?: The instructions for preparing the meal, if available.
@@ -26,25 +26,25 @@ import Foundation
  */
 struct MealDetail: Decodable, Identifiable {
     ///String identifier for the meal.
-    var id: String
+    let id: String
     ///The name of the meal.
-    var meal: String
+    let name: String
     ///The category of the meal, if any.
-    var category: String?
+    let category: String?
     ///The area or origin of the meal, if any.
-    var area: String?
+    let area: String?
     ///The instructions for preparing the meal, if available.
-    var instructions: String?
+    let instructions: String?
     ///The URL of the thumbnail image for the meal, if available.
-    var thumb: URL?
+    let thumb: URL?
     ///The URL of the image source for the meal, if available.
-    var imageSource: URL?
+    let imageSource: URL?
     ///An array of tags associated with the meal.
-    var tags: [String]
+    let tags: [String]
     ///The URL of the YouTube video showing how to prepare the meal, if available.
-    var youtube: URL?
+    let youtube: URL?
     ///An array of tuples representing the ingredients needed to prepare the meal. Each tuple contains two strings: the name of the ingredient and the corresponding measure.
-    var ingredients: [(String,String)]
+    let ingredients: [Ingredient]
     
     enum CodingKeys: String, CodingKey {
         case id = "idMeal"
@@ -63,7 +63,7 @@ struct MealDetail: Decodable, Identifiable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(String.self, forKey: .id)
-        meal = try values.decode(String.self, forKey: .meal)
+        name = try values.decode(String.self, forKey: .meal)
         category = try values.decodeIfPresent(String.self, forKey: .category)
         area = try values.decodeIfPresent(String.self, forKey: .area)
         instructions = try values.decodeIfPresent(String.self, forKey: .instructions)
@@ -79,14 +79,14 @@ struct MealDetail: Decodable, Identifiable {
         youtube = try values.decodeIfPresent(URL.self, forKey: .youtube)
         
         // Extract ingredients and measurements
-        var ingredientsArray = [(String, String)]()
+        var ingredientsArray = [Ingredient]()
         for index in 1...20 {
             let ingredientKey = "strIngredient\(index)"
             let measureKey = "strMeasure\(index)"
             let ingredient = try values.decodeIfPresent(String.self, forKey: CodingKeys(stringValue: ingredientKey)!)
             let measure = try values.decodeIfPresent(String.self, forKey: CodingKeys(stringValue: measureKey)!)
             if let ingredient = ingredient, !ingredient.isEmpty, let measure = measure, !measure.isEmpty {
-                ingredientsArray.append((ingredient, measure))
+                ingredientsArray.append(Ingredient(name:ingredient, amount: measure))
             }
         }
         ingredients = ingredientsArray

@@ -18,6 +18,7 @@
 		D8D104DB29B996DB00599EEE /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104DA29B996DB00599EEE /* APITest.swift */; };
 		D8D104DE29BA420E00599EEE /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104DD29BA420E00599EEE /* URLProtocolMock.swift */; };
 		D8D104E029BA5CF900599EEE /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104DF29BA5CF900599EEE /* MealDetail.swift */; };
+		D8D104E529BAA19900599EEE /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104E429BAA19900599EEE /* Ingredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D8D104DA29B996DB00599EEE /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
 		D8D104DD29BA420E00599EEE /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		D8D104DF29BA5CF900599EEE /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
+		D8D104E429BAA19900599EEE /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				D8D104D429B958C100599EEE /* MealInfo.swift */,
 				D8D104DF29BA5CF900599EEE /* MealDetail.swift */,
+				D8D104E429BAA19900599EEE /* Ingredient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				D8D104D529B958C100599EEE /* MealInfo.swift in Sources */,
 				D8D104A929B955EA00599EEE /* MealListView.swift in Sources */,
+				D8D104E529BAA19900599EEE /* Ingredient.swift in Sources */,
 				D8D104E029BA5CF900599EEE /* MealDetail.swift in Sources */,
 				D8D104D829B95CC800599EEE /* APIService.swift in Sources */,
 				D8D104A729B955EA00599EEE /* SweetToothRecipeApp.swift in Sources */,

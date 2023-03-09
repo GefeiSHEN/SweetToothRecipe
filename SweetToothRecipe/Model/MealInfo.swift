@@ -19,11 +19,11 @@ import Foundation
  */
 struct MealInfo: Identifiable, Codable {
     ///String identifier for the meal.
-    var id : String
+    let id : String
     ///The name of the meal.
-    var name : String
+    let name : String
     ///The URL of the thumbnail imagefor the meal.
-    var thumb : URL?
+    let thumb : URL?
     
     enum CodingKeys: String, CodingKey {
         case id = "idMeal"
