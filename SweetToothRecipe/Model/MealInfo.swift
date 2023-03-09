@@ -23,7 +23,7 @@ struct MealInfo: Identifiable, Codable {
     ///The name of the meal.
     var name : String
     ///The URL of the thumbnail imagefor the meal.
-    var thumb : URL
+    var thumb : URL?
     
     enum CodingKeys: String, CodingKey {
         case id = "idMeal"

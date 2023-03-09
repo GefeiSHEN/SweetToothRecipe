@@ -51,7 +51,7 @@ class APIServiceTests: XCTestCase {
         XCTAssertEqual(meals.count, 1)
         XCTAssertEqual(meals[0].id, "1234")
         XCTAssertEqual(meals[0].name, "Apple Pie")
-        XCTAssertEqual(meals[0].thumb.absoluteString, "https://www.themealdb.com/images/media/meals/applepie.jpg")
+        XCTAssertEqual(meals[0].thumb?.absoluteString, "https://www.themealdb.com/images/media/meals/applepie.jpg")
     }
     
     func testGetDessertServerFailure() async throws {
