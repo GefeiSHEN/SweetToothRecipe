@@ -18,7 +18,7 @@ import Foundation
  - SeeAlso: `Identifiable`
  */
 struct MealInfo: Identifiable, Codable {
-//    /Integer identifier for the meal.
+    ///String identifier for the meal.
     var id : String
     ///The name of the meal.
     var name : String
