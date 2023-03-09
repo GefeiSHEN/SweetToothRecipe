@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D8D104A729B955EA00599EEE /* SweetToothRecipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104A629B955EA00599EEE /* SweetToothRecipeApp.swift */; };
-		D8D104A929B955EA00599EEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104A829B955EA00599EEE /* ContentView.swift */; };
+		D8D104A929B955EA00599EEE /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104A829B955EA00599EEE /* MealListView.swift */; };
 		D8D104AB29B955EB00599EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D104AA29B955EB00599EEE /* Assets.xcassets */; };
 		D8D104AF29B955EB00599EEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D104AE29B955EB00599EEE /* Preview Assets.xcassets */; };
 		D8D104B929B955EB00599EEE /* SweetToothRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104B829B955EB00599EEE /* SweetToothRecipeTests.swift */; };
 		D8D104C329B955EB00599EEE /* SweetToothRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */; };
 		D8D104C529B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */; };
+		D8D104D529B958C100599EEE /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104D429B958C100599EEE /* MealInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		D8D104A329B955EA00599EEE /* SweetToothRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetToothRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D104A629B955EA00599EEE /* SweetToothRecipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeApp.swift; sourceTree = "<group>"; };
-		D8D104A829B955EA00599EEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8D104A829B955EA00599EEE /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
 		D8D104AA29B955EB00599EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8D104AC29B955EB00599EEE /* SweetToothRecipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SweetToothRecipe.entitlements; sourceTree = "<group>"; };
 		D8D104AE29B955EB00599EEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		D8D104BE29B955EB00599EEE /* SweetToothRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetToothRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITests.swift; sourceTree = "<group>"; };
 		D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8D104D429B958C100599EEE /* MealInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,9 @@
 		D8D104A529B955EA00599EEE /* SweetToothRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				D8D104D229B9571600599EEE /* Model */,
 				D8D104A629B955EA00599EEE /* SweetToothRecipeApp.swift */,
-				D8D104A829B955EA00599EEE /* ContentView.swift */,
+				D8D104A829B955EA00599EEE /* MealListView.swift */,
 				D8D104AA29B955EB00599EEE /* Assets.xcassets */,
 				D8D104AC29B955EB00599EEE /* SweetToothRecipe.entitlements */,
 				D8D104AD29B955EB00599EEE /* Preview Content */,
@@ -127,6 +130,14 @@
 				D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */,
 			);
 			path = SweetToothRecipeUITests;
+			sourceTree = "<group>";
+		};
+		D8D104D229B9571600599EEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8D104D429B958C100599EEE /* MealInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D104A929B955EA00599EEE /* ContentView.swift in Sources */,
+				D8D104D529B958C100599EEE /* MealInfo.swift in Sources */,
+				D8D104A929B955EA00599EEE /* MealListView.swift in Sources */,
 				D8D104A729B955EA00599EEE /* SweetToothRecipeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
