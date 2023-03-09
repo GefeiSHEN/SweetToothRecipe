@@ -11,7 +11,6 @@
 		D8D104A929B955EA00599EEE /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104A829B955EA00599EEE /* MealListView.swift */; };
 		D8D104AB29B955EB00599EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D104AA29B955EB00599EEE /* Assets.xcassets */; };
 		D8D104AF29B955EB00599EEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D104AE29B955EB00599EEE /* Preview Assets.xcassets */; };
-		D8D104B929B955EB00599EEE /* SweetToothRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104B829B955EB00599EEE /* SweetToothRecipeTests.swift */; };
 		D8D104C329B955EB00599EEE /* SweetToothRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */; };
 		D8D104C529B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */; };
 		D8D104D529B958C100599EEE /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104D429B958C100599EEE /* MealInfo.swift */; };
@@ -45,7 +44,6 @@
 		D8D104AC29B955EB00599EEE /* SweetToothRecipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SweetToothRecipe.entitlements; sourceTree = "<group>"; };
 		D8D104AE29B955EB00599EEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8D104B429B955EB00599EEE /* SweetToothRecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetToothRecipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8D104B829B955EB00599EEE /* SweetToothRecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeTests.swift; sourceTree = "<group>"; };
 		D8D104BE29B955EB00599EEE /* SweetToothRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetToothRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITests.swift; sourceTree = "<group>"; };
 		D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 			children = (
 				D8D104DC29BA41EE00599EEE /* Service */,
 				D8D104D929B996BD00599EEE /* ServiceTest */,
-				D8D104B829B955EB00599EEE /* SweetToothRecipeTests.swift */,
 			);
 			path = SweetToothRecipeTests;
 			sourceTree = "<group>";
@@ -316,7 +313,6 @@
 			files = (
 				D8D104DB29B996DB00599EEE /* APITest.swift in Sources */,
 				D8D104DE29BA420E00599EEE /* URLProtocolMock.swift in Sources */,
-				D8D104B929B955EB00599EEE /* SweetToothRecipeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
