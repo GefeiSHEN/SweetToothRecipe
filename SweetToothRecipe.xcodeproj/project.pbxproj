@@ -15,6 +15,9 @@
 		D8D104C329B955EB00599EEE /* SweetToothRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */; };
 		D8D104C529B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */; };
 		D8D104D529B958C100599EEE /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104D429B958C100599EEE /* MealInfo.swift */; };
+		D8D104D829B95CC800599EEE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104D729B95CC800599EEE /* APIService.swift */; };
+		D8D104DB29B996DB00599EEE /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104DA29B996DB00599EEE /* APITest.swift */; };
+		D8D104DE29BA420E00599EEE /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104DD29BA420E00599EEE /* URLProtocolMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITests.swift; sourceTree = "<group>"; };
 		D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8D104D429B958C100599EEE /* MealInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfo.swift; sourceTree = "<group>"; };
+		D8D104D729B95CC800599EEE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D8D104DA29B996DB00599EEE /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
+		D8D104DD29BA420E00599EEE /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		D8D104A529B955EA00599EEE /* SweetToothRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				D8D104D629B95CBD00599EEE /* Service */,
 				D8D104D229B9571600599EEE /* Model */,
 				D8D104A629B955EA00599EEE /* SweetToothRecipeApp.swift */,
 				D8D104A829B955EA00599EEE /* MealListView.swift */,
@@ -118,6 +125,8 @@
 		D8D104B729B955EB00599EEE /* SweetToothRecipeTests */ = {
 			isa = PBXGroup;
 			children = (
+				D8D104DC29BA41EE00599EEE /* Service */,
+				D8D104D929B996BD00599EEE /* ServiceTest */,
 				D8D104B829B955EB00599EEE /* SweetToothRecipeTests.swift */,
 			);
 			path = SweetToothRecipeTests;
@@ -138,6 +147,30 @@
 				D8D104D429B958C100599EEE /* MealInfo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D8D104D629B95CBD00599EEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D8D104D729B95CC800599EEE /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D8D104D929B996BD00599EEE /* ServiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				D8D104DA29B996DB00599EEE /* APITest.swift */,
+			);
+			path = ServiceTest;
+			sourceTree = "<group>";
+		};
+		D8D104DC29BA41EE00599EEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D8D104DD29BA420E00599EEE /* URLProtocolMock.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +305,7 @@
 			files = (
 				D8D104D529B958C100599EEE /* MealInfo.swift in Sources */,
 				D8D104A929B955EA00599EEE /* MealListView.swift in Sources */,
+				D8D104D829B95CC800599EEE /* APIService.swift in Sources */,
 				D8D104A729B955EA00599EEE /* SweetToothRecipeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D104DB29B996DB00599EEE /* APITest.swift in Sources */,
+				D8D104DE29BA420E00599EEE /* URLProtocolMock.swift in Sources */,
 				D8D104B929B955EB00599EEE /* SweetToothRecipeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
