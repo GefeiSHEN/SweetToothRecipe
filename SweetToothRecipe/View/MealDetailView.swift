@@ -54,6 +54,27 @@ struct MealDetailView: View {
                         }
                         .frame(maxWidth: .infinity)
                         
+                        if !meal.ingredients.isEmpty {
+                            VStack(alignment: .leading, spacing: 10) {
+                                Text("Ingredients")
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                ForEach(meal.ingredients, id: \.self) { ingredient in
+                                    HStack {
+                                        Text("\(ingredient.name.capitalized)")
+                                            .fontWeight(.medium)
+                                        Spacer()
+                                        Text("\(ingredient.amount)")
+                                            .fontWeight(.light)
+                                    }
+                                }
+                            }
+                            .padding()
+                            .background(.black.opacity(0.05))
+                            .cornerRadius(8)
+                            .frame(maxWidth: .infinity)
+                        }
+                        
                         if let instructions = meal.instructions {
                             VStack(alignment: .leading, spacing: 10) {
                                 Text("Instructions")
@@ -64,21 +85,7 @@ struct MealDetailView: View {
                             .frame(maxWidth: .infinity)
                         }
                         
-                        if !meal.ingredients.isEmpty {
-                            VStack(alignment: .leading, spacing: 10) {
-                                Text("Ingredients")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                ForEach(meal.ingredients, id: \.self) { ingredient in
-                                    HStack {
-                                        Text("\(ingredient.name)")
-                                        Spacer()
-                                        Text("\(ingredient.amount)")
-                                    }
-                                }
-                            }
-                            .frame(maxWidth: .infinity)
-                        }
+                        
                     }
                     .padding(.horizontal)
                     .padding(.bottom, 32)
@@ -92,10 +99,17 @@ struct MealDetailView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarTitle(viewModel.meal?.name ?? "")
-        .alert(isPresented: $viewModel.isError) {
-            Alert(title: Text("Error"), message: Text(viewModel.error?.localizedDescription ?? "AAA"), dismissButton: .default(Text("OK"), action: {
+        .alert("Fetching Failed", isPresented: $viewModel.isError) {
+            Button("Dismiss") {
+                print("User Dismissed Alert")
                 viewModel.isError = false
-            }))
+            }
+            Button("Retry") {
+                viewModel.getMealDetail()
+                print("User Dismissed Alert with Refresh")
+            }
+        } message: {
+            Text(viewModel.error?.localizedDescription ?? "An Error Occured")
         }
         .onAppear {
             viewModel.getMealDetail()
@@ -108,7 +122,6 @@ class MealDetailViewModel: ObservableObject {
     private let api: APIService
     
     @Published var meal: MealDetail?
-    @Published var isLoading = false
     @Published var error: Error?
     @Published var isError = false
     
@@ -118,9 +131,6 @@ class MealDetailViewModel: ObservableObject {
     }
     
     func getMealDetail() {
-        withAnimation {
-            self.isLoading = true
-        }
         Task {
             do {
                 let meal = try await api.getDessertDetail(mealId: mealId)
@@ -135,11 +145,6 @@ class MealDetailViewModel: ObservableObject {
                         self.error = error
                         self.isError = true
                     }
-                }
-            }
-            DispatchQueue.main.async {
-                withAnimation {
-                    self.isLoading = false
                 }
             }
         }
