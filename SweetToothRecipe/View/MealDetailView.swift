@@ -85,7 +85,11 @@ struct MealDetailView: View {
                             .frame(maxWidth: .infinity)
                         }
                         
-                        
+                        if let youtube = meal.youtube {
+                            Link("Watch \(meal.name) on Youtube (External)", destination: youtube)
+                                .font(.caption)
+                        }
+                            
                     }
                     .padding(.horizontal)
                     .padding(.bottom, 32)
