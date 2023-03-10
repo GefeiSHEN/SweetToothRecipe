@@ -106,11 +106,11 @@
 		D8D104A529B955EA00599EEE /* SweetToothRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				D8D104E729BAB89E00599EEE /* View */,
 				D8D104E629BAB83500599EEE /* Info.plist */,
 				D8D104D629B95CBD00599EEE /* Service */,
 				D8D104D229B9571600599EEE /* Model */,
 				D8D104A629B955EA00599EEE /* SweetToothRecipeApp.swift */,
-				D8D104A829B955EA00599EEE /* MealListView.swift */,
 				D8D104AA29B955EB00599EEE /* Assets.xcassets */,
 				D8D104AC29B955EB00599EEE /* SweetToothRecipe.entitlements */,
 				D8D104AD29B955EB00599EEE /* Preview Content */,
@@ -176,6 +176,14 @@
 				D8D104DD29BA420E00599EEE /* URLProtocolMock.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		D8D104E729BAB89E00599EEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8D104A829B955EA00599EEE /* MealListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
