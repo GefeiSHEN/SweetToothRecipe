@@ -18,10 +18,18 @@
 		D8D104E029BA5CF900599EEE /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104DF29BA5CF900599EEE /* MealDetail.swift */; };
 		D8D104E529BAA19900599EEE /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104E429BAA19900599EEE /* Ingredient.swift */; };
 		D8D104E929BAB9C500599EEE /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104E829BAB9C500599EEE /* MealDetailView.swift */; };
+		D8D5255729BAEFBD00D488F4 /* SweetToothRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D5255629BAEFBD00D488F4 /* SweetToothRecipeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D8D104B529B955EB00599EEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D1049B29B955EA00599EEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D104A229B955EA00599EEE;
+			remoteInfo = SweetToothRecipe;
+		};
+		D8D5255A29BAEFBD00D488F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8D1049B29B955EA00599EEE /* Project object */;
 			proxyType = 1;
@@ -46,6 +54,8 @@
 		D8D104E429BAA19900599EEE /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		D8D104E629BAB83500599EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D8D104E829BAB9C500599EEE /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		D8D5255429BAEFBD00D488F4 /* SweetToothRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetToothRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D5255629BAEFBD00D488F4 /* SweetToothRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8D5255129BAEFBD00D488F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +88,7 @@
 			children = (
 				D8D104A529B955EA00599EEE /* SweetToothRecipe */,
 				D8D104B729B955EB00599EEE /* SweetToothRecipeTests */,
+				D8D5255529BAEFBD00D488F4 /* SweetToothRecipeUITests */,
 				D8D104A429B955EA00599EEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +98,7 @@
 			children = (
 				D8D104A329B955EA00599EEE /* SweetToothRecipe.app */,
 				D8D104B429B955EB00599EEE /* SweetToothRecipeTests.xctest */,
+				D8D5255429BAEFBD00D488F4 /* SweetToothRecipeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +178,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D8D5255529BAEFBD00D488F4 /* SweetToothRecipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8D5255629BAEFBD00D488F4 /* SweetToothRecipeUITests.swift */,
+			);
+			path = SweetToothRecipeUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +224,24 @@
 			productReference = D8D104B429B955EB00599EEE /* SweetToothRecipeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D8D5255329BAEFBD00D488F4 /* SweetToothRecipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D5255C29BAEFBD00D488F4 /* Build configuration list for PBXNativeTarget "SweetToothRecipeUITests" */;
+			buildPhases = (
+				D8D5255029BAEFBD00D488F4 /* Sources */,
+				D8D5255129BAEFBD00D488F4 /* Frameworks */,
+				D8D5255229BAEFBD00D488F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D5255B29BAEFBD00D488F4 /* PBXTargetDependency */,
+			);
+			name = SweetToothRecipeUITests;
+			productName = SweetToothRecipeUITests;
+			productReference = D8D5255429BAEFBD00D488F4 /* SweetToothRecipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +256,10 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					D8D104B329B955EB00599EEE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D8D104A229B955EA00599EEE;
+					};
+					D8D5255329BAEFBD00D488F4 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = D8D104A229B955EA00599EEE;
 					};
@@ -231,6 +280,7 @@
 			targets = (
 				D8D104A229B955EA00599EEE /* SweetToothRecipe */,
 				D8D104B329B955EB00599EEE /* SweetToothRecipeTests */,
+				D8D5255329BAEFBD00D488F4 /* SweetToothRecipeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +296,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D8D104B229B955EB00599EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D5255229BAEFBD00D488F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,6 +335,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8D5255029BAEFBD00D488F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D5255729BAEFBD00D488F4 /* SweetToothRecipeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -285,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = D8D104A229B955EA00599EEE /* SweetToothRecipe */;
 			targetProxy = D8D104B529B955EB00599EEE /* PBXContainerItemProxy */;
+		};
+		D8D5255B29BAEFBD00D488F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8D104A229B955EA00599EEE /* SweetToothRecipe */;
+			targetProxy = D8D5255A29BAEFBD00D488F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,6 +606,51 @@
 			};
 			name = Release;
 		};
+		D8D5255D29BAEFBD00D488F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U9WMKVM6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gefeishen.SweetToothRecipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SweetToothRecipe;
+			};
+			name = Debug;
+		};
+		D8D5255E29BAEFBD00D488F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7U9WMKVM6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gefeishen.SweetToothRecipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SweetToothRecipe;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -562,6 +677,15 @@
 			buildConfigurations = (
 				D8D104CC29B955EB00599EEE /* Debug */,
 				D8D104CD29B955EB00599EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D5255C29BAEFBD00D488F4 /* Build configuration list for PBXNativeTarget "SweetToothRecipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D5255D29BAEFBD00D488F4 /* Debug */,
+				D8D5255E29BAEFBD00D488F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
