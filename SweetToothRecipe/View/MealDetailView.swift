@@ -122,11 +122,15 @@ struct MealDetailView: View {
 }
 
 class MealDetailViewModel: ObservableObject {
+    ///meaIId of the meal
     private let mealId: String
     private let api: APIService
     
+    ///meal detail
     @Published var meal: MealDetail?
+    ///the error thrown, if any
     @Published var error: Error?
+    ///wheather encountered an error
     @Published var isError = false
     
     init(mealId: String, api: APIService = APIService()) {
