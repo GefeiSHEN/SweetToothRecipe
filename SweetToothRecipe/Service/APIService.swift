@@ -45,6 +45,8 @@ class APIService {
         var meals = [MealInfo]()
         meals = try JSONDecoder().decode(MealInfoResponse.self, from: data).meals
         
+        meals = meals.filter{!$0.id.isEmpty && !$0.name.isEmpty }
+        
         return meals
     }
     /**
