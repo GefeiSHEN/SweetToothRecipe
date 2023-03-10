@@ -22,6 +22,16 @@ struct MealListView: View {
                             NavigationLink {
                                 MealDetailView(mealId: dessert.id)
                             } label: {
+                                AsyncImage(url: dessert.thumb) { image in
+                                    image.resizable()
+                                } placeholder: {
+                                    Image(systemName: "photo")
+                                        .imageScale(.large)
+                                        .foregroundColor(.gray)
+                                }
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:40, height: 40)
+                                .clipped()
                                 Text(dessert.name)
                             }
 
