@@ -11,8 +11,6 @@
 		D8D104A929B955EA00599EEE /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104A829B955EA00599EEE /* MealListView.swift */; };
 		D8D104AB29B955EB00599EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D104AA29B955EB00599EEE /* Assets.xcassets */; };
 		D8D104AF29B955EB00599EEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D104AE29B955EB00599EEE /* Preview Assets.xcassets */; };
-		D8D104C329B955EB00599EEE /* SweetToothRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */; };
-		D8D104C529B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */; };
 		D8D104D529B958C100599EEE /* MealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104D429B958C100599EEE /* MealInfo.swift */; };
 		D8D104D829B95CC800599EEE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104D729B95CC800599EEE /* APIService.swift */; };
 		D8D104DB29B996DB00599EEE /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D104DA29B996DB00599EEE /* APITest.swift */; };
@@ -30,13 +28,6 @@
 			remoteGlobalIDString = D8D104A229B955EA00599EEE;
 			remoteInfo = SweetToothRecipe;
 		};
-		D8D104BF29B955EB00599EEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D8D1049B29B955EA00599EEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8D104A229B955EA00599EEE;
-			remoteInfo = SweetToothRecipe;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +38,6 @@
 		D8D104AC29B955EB00599EEE /* SweetToothRecipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SweetToothRecipe.entitlements; sourceTree = "<group>"; };
 		D8D104AE29B955EB00599EEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8D104B429B955EB00599EEE /* SweetToothRecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetToothRecipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8D104BE29B955EB00599EEE /* SweetToothRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetToothRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITests.swift; sourceTree = "<group>"; };
-		D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetToothRecipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8D104D429B958C100599EEE /* MealInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfo.swift; sourceTree = "<group>"; };
 		D8D104D729B95CC800599EEE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D8D104DA29B996DB00599EEE /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
@@ -75,13 +63,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8D104BB29B955EB00599EEE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +71,6 @@
 			children = (
 				D8D104A529B955EA00599EEE /* SweetToothRecipe */,
 				D8D104B729B955EB00599EEE /* SweetToothRecipeTests */,
-				D8D104C129B955EB00599EEE /* SweetToothRecipeUITests */,
 				D8D104A429B955EA00599EEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +80,6 @@
 			children = (
 				D8D104A329B955EA00599EEE /* SweetToothRecipe.app */,
 				D8D104B429B955EB00599EEE /* SweetToothRecipeTests.xctest */,
-				D8D104BE29B955EB00599EEE /* SweetToothRecipeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,15 +114,6 @@
 				D8D104D929B996BD00599EEE /* ServiceTest */,
 			);
 			path = SweetToothRecipeTests;
-			sourceTree = "<group>";
-		};
-		D8D104C129B955EB00599EEE /* SweetToothRecipeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D8D104C229B955EB00599EEE /* SweetToothRecipeUITests.swift */,
-				D8D104C429B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift */,
-			);
-			path = SweetToothRecipeUITests;
 			sourceTree = "<group>";
 		};
 		D8D104D229B9571600599EEE /* Model */ = {
@@ -227,24 +197,6 @@
 			productReference = D8D104B429B955EB00599EEE /* SweetToothRecipeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D8D104BD29B955EB00599EEE /* SweetToothRecipeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D8D104CE29B955EB00599EEE /* Build configuration list for PBXNativeTarget "SweetToothRecipeUITests" */;
-			buildPhases = (
-				D8D104BA29B955EB00599EEE /* Sources */,
-				D8D104BB29B955EB00599EEE /* Frameworks */,
-				D8D104BC29B955EB00599EEE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8D104C029B955EB00599EEE /* PBXTargetDependency */,
-			);
-			name = SweetToothRecipeUITests;
-			productName = SweetToothRecipeUITests;
-			productReference = D8D104BE29B955EB00599EEE /* SweetToothRecipeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,10 +211,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					D8D104B329B955EB00599EEE = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = D8D104A229B955EA00599EEE;
-					};
-					D8D104BD29B955EB00599EEE = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = D8D104A229B955EA00599EEE;
 					};
@@ -283,7 +231,6 @@
 			targets = (
 				D8D104A229B955EA00599EEE /* SweetToothRecipe */,
 				D8D104B329B955EB00599EEE /* SweetToothRecipeTests */,
-				D8D104BD29B955EB00599EEE /* SweetToothRecipeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,13 +246,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D8D104B229B955EB00599EEE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8D104BC29B955EB00599EEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,15 +278,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8D104BA29B955EB00599EEE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8D104C529B955EB00599EEE /* SweetToothRecipeUITestsLaunchTests.swift in Sources */,
-				D8D104C329B955EB00599EEE /* SweetToothRecipeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -354,11 +285,6 @@
 			isa = PBXTargetDependency;
 			target = D8D104A229B955EA00599EEE /* SweetToothRecipe */;
 			targetProxy = D8D104B529B955EB00599EEE /* PBXContainerItemProxy */;
-		};
-		D8D104C029B955EB00599EEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D8D104A229B955EA00599EEE /* SweetToothRecipe */;
-			targetProxy = D8D104BF29B955EB00599EEE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -610,54 +536,6 @@
 			};
 			name = Release;
 		};
-		D8D104CF29B955EB00599EEE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7U9WMKVM6V;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gefeishen.SweetToothRecipeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SweetToothRecipe;
-			};
-			name = Debug;
-		};
-		D8D104D029B955EB00599EEE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7U9WMKVM6V;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gefeishen.SweetToothRecipeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SweetToothRecipe;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -684,15 +562,6 @@
 			buildConfigurations = (
 				D8D104CC29B955EB00599EEE /* Debug */,
 				D8D104CD29B955EB00599EEE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D8D104CE29B955EB00599EEE /* Build configuration list for PBXNativeTarget "SweetToothRecipeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D8D104CF29B955EB00599EEE /* Debug */,
-				D8D104D029B955EB00599EEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
