@@ -18,7 +18,13 @@ struct MealListView: View {
                 } else {
                     List {
                         ForEach(viewModel.desserts) { dessert in
-                            Text(dessert.name)
+                            
+                            NavigationLink {
+                                MealDetailView(mealId: dessert.id)
+                            } label: {
+                                Text(dessert.name)
+                            }
+
                         }
                     }
                     .refreshable {
@@ -34,6 +40,7 @@ struct MealListView: View {
             .alert("Fetching Failed", isPresented: $viewModel.isError) {
                 Button("Dismiss") {
                     print("User Dismissed Alert")
+                    viewModel.isError = false
                 }
                 Button("Retry") {
                     viewModel.getDesserts()
