@@ -14,7 +14,7 @@ import Foundation
     - name: Name of the ingredient in String
     - amount: Amount of the ingredient in String
  */
-struct Ingredient: Equatable {
+struct Ingredient: Equatable, Hashable {
     ///Name of the ingredient in String
     let name : String
     ///Amount of the ingredient in String
