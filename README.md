@@ -1,5 +1,5 @@
 # SweetToothRecipe
-An iOS Dessert Recipe App.
+An iOS Dessert Recipe App utilizing apis from the themealdb. It shows all dessert recipes from the api and displays them along with instructions and ingredient lists.
 
 To run the app:
 1. Open project in XCode
